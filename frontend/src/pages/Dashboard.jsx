@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchInvoices, triggerReminder, logout } from '../api';
 import InvoiceList from '../components/InvoiceList';
-import './Dashboard.css'; // ✅ Import the CSS
+import './Dashboard.css';
 
 const Dashboard = ({ user }) => {
   const [invoices, setInvoices] = useState([]);
