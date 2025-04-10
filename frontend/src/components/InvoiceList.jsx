@@ -1,5 +1,5 @@
 import React from 'react';
-import './InvoiceList.css'; // ✅ Import the CSS file
+import './InvoiceList.css'; 
 
 const InvoiceList = ({ invoices, onRemind }) => {
   if (invoices.length === 0) return <p className="no-invoices">No unpaid invoices 🎉</p>;
@@ -11,7 +11,7 @@ const InvoiceList = ({ invoices, onRemind }) => {
           <p><strong>Recipient:</strong> {inv.recipientEmail}</p>
     <p><strong>Amount:</strong> ₹{inv.amount}</p>
           <p><strong>Due:</strong> {new Date(inv.dueDate).toLocaleDateString()}</p>
-          <p><strong>Reminder Sent:</strong> {inv.reminderSent ? '✅ Yes' : '❌ No'}</p>
+          <p><strong>Reminder Sent:</strong> {inv.reminderSent ? 'Yes' : ' No'}</p>
           {inv.customMessage && (
             <p className="invoice-message">“{inv.customMessage}”</p>
           )}
