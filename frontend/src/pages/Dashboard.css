@@ -1,0 +1,55 @@
+.dashboard-container {
+    padding: 24px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .dashboard-welcome {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .dashboard-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .logout-button {
+    background-color: transparent;
+    color: crimson;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .logout-button:hover {
+    opacity: 0.8;
+  }
+  
+  .add-invoice-button {
+    background-color: #22c55e;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-invoice-button:hover {
+    background-color: #16a34a;
+  }
+  
